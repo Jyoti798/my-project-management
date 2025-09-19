@@ -20,7 +20,7 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import Logo from '@/components/logo';
-import GoogleOauthButton from '@/components/auth/google-oauth-button';
+// import GoogleOauthButton from '@/components/auth/google-oauth-button';
 import { useMutation } from '@tanstack/react-query';
 import { registerMutationFn } from '@/lib/api';
 import { toast } from '@/hooks/use-toast';
@@ -87,7 +87,7 @@ const SignUp = () => {
                 <form onSubmit={form.handleSubmit(onSubmit)}>
                   <div className="grid gap-6">
                     <div className="flex flex-col gap-4">
-                      <GoogleOauthButton label="Signup" />
+                     
                     </div>
                     <div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
                       <span className="relative z-10 bg-background px-2 text-muted-foreground">
@@ -111,7 +111,6 @@ const SignUp = () => {
                                   {...field}
                                 />
                               </FormControl>
-
                               <FormMessage />
                             </FormItem>
                           )}
