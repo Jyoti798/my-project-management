@@ -5,7 +5,7 @@
   "type": "module",
   "author": "roshan prajapati",
   "license": "ISC",
-  "description": "Frontend for monkey website (project managmenet)",
+  "description": "Frontend for Techno website (project managmenet)",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

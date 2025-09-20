@@ -1,100 +1,101 @@
-# 🐒 Monkey - Project Management SaaS
+⚡ Techno – Project Management SaaS
 
-Monkey is a powerful, scalable multi-tenancy project management platform built for modern teams and real-world B2B collaboration. With rich features like task management, project tracking, role-based access control, and data analytics, Monkey enables organizations to streamline productivity, enhance collaboration, and manage projects efficiently across multiple workspaces.
+Techno is a modern, scalable multi-tenancy project management platform crafted for growing teams and enterprises. With features like workspace management, task tracking, role-based access, and insightful analytics, Techno helps organizations boost collaboration, maintain productivity, and streamline project workflows across multiple clients and teams.
 
----
+🚀 Demo
 
-## 🚀 Demo
+Live Link: Techno – Project Management
 
-> Live Link [Monkey - Project management](https://prajapatiroshan.github.io/project-management)
+📌 Project Highlights
 
----
+🔐 Secure Authentication (Google & Email)
 
-## 📌 Project Highlights
+🏢 Multiple Workspace Support
 
-- 🔐 Google & Email Authentication
-- 🏢 Multi-Workspace Support
-- 📊 Project & Epic Management
-- ✅ Task Tracking with Filters & Search
-- 👥 Member Roles & Access Control (Owner, Admin, Member)
-- 📈 Workspace & Project Analytics
-- ✉️ Workspace Invite System
-- 🌐 Full-stack MERN architecture with TypeScript
-- 💾 Mongoose Transactions & Data Integrity
-- 🌱 Seed Test Data for Development
+📊 Project, Epic & Milestone Tracking
 
----
+✅ Task Management with Filters, Search & Priority Levels
 
-## 🔧 Technologies Used
+👥 Role-Based Access Control (Owner, Admin, Member)
 
-### 🖥️ Frontend
+📈 Analytics Dashboard for Workspaces & Projects
 
-- React.js (with TypeScript)
-- TailwindCSS & Shadcn UI
-- React Query
-- React Hook Form + Zod
-- Vite.js
+✉️ Invite & Onboarding System
 
-### 🖥️ Backend
+🌐 Full-stack MERN + TypeScript Architecture
 
-- Node.js + Express.js
-- MongoDB + Mongoose
-- TypeScript
-- Google OAuth 2.0
-- Cookie-based Sessions
-- JWT (jsonwebtoken)
+💾 Strong Data Integrity with Transactions
 
----
+🌱 Pre-seeded Data for Faster Development & Testing
 
-## 💡 Key Features
+🔧 Technologies Used
+🖥️ Frontend
 
-| Feature              | Description                                          |
-| -------------------- | ---------------------------------------------------- |
-| Authentication       | Google OAuth, Email & Password                       |
-| Workspace Management | Create, edit, invite members, assign roles           |
-| Project Management   | Create and track multiple projects per workspace     |
-| Task Management      | CRUD operations, filters, due dates, priorities      |
-| Analytics            | Overview of project and task stats                   |
-| Role-Based Access    | Owner, Admin, Member roles with defined permissions  |
-| Smart Filters        | Filter tasks by status, assignee, priority, due date |
-| Pagination           | Paginated data for optimized performance             |
-| Invite System        | Share invite code to onboard new members             |
+React.js + TypeScript
 
----
+TailwindCSS & Shadcn UI
 
-## 🧠 Challenges Faced
+React Query (Data fetching & caching)
 
-- Implementing multi-tenancy architecture with scoped access
-- Handling role-based permissions in nested resources
-- Managing real-time validation with React Hook Form & Zod
-- Structuring scalable backend APIs with transactions
-- Smooth integration of Google OAuth in MERN environment
+React Hook Form + Zod (Form validation)
 
----
+Vite.js
 
-## 🌍 Use Cases & Scope
+⚙️ Backend
 
-Monkey is designed to support:
+Node.js + Express.js
 
-- B2B SaaS startups
-- Agile product teams
-- Remote and hybrid teams
-- Task & project tracking platforms
-- Multi-client agency projects
+MongoDB + Mongoose
 
-The system is extensible and can scale from small team use to enterprise-level operations.
+TypeScript
 
----
+Google OAuth 2.0
 
-## 🔗 API Reference
+JWT & Cookie-Based Sessions
 
-All backend routes are listed in the main project documentation or docs/api.md (if added). Refer to it for complete endpoint documentation grouped by auth, workspace, project, and task management.
+Mongoose Transactions
 
----
+💡 Core Features
+Feature	Description
+Authentication	Google OAuth + Email & Password
+Workspace Management	Create, edit, invite members, and assign role permissions
+Project Management	Organize projects, manage epics & milestones
+Task Management	Full CRUD, due dates, filters, and prioritization
+Analytics	Visual dashboards for team and project stats
+Role-Based Access	Secure access levels: Owner, Admin, Member
+Smart Filters	Task filtering by assignee, status, priority, and dates
+Pagination	Paginated queries for smooth performance
+Invite System	Share invite codes for easy team onboarding
+🧠 Key Challenges Solved
 
-## 📞 Contact
+Designing a clean multi-tenancy model for organizations
 
-Author: Roshan prajapati
+Implementing flexible role-based access in nested resources
 
-LinkedIn: [roshan_prajapati](https://www.linkedin.com/in/roshanprajapati/)
+Ensuring smooth real-time validation with React Hook Form + Zod
 
+Managing scalable API design with transactions and error handling
+
+Handling third-party authentication (Google OAuth) seamlessly
+
+🌍 Use Cases
+
+Techno can be used by:
+
+SaaS startups building project management tools
+
+Agile teams managing sprints and backlogs
+
+Remote & hybrid teams improving collaboration
+
+Digital agencies managing multiple client projects
+
+Enterprises looking for scalable task & project tracking
+
+🔗 API Reference
+
+Complete API documentation is available inside docs/api.md (or backend docs). It covers authentication, workspace, project, and task APIs.
+
+📞 Contact
+
+Author: Jyoti Singh
