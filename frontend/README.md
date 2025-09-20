@@ -118,4 +118,4 @@ Below is a comprehensive list of backend API endpoints grouped by functionality,
 
 ---
 
-This section provides a clear overview of all backend API endpoints, making it easier for developers to integrate and test the application.
+This section provides a clear overview of all backend API endpoints
