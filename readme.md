@@ -99,3 +99,10 @@ Complete API documentation is available inside docs/api.md (or backend docs). It
 📞 Contact
 
 Author: Jyoti Singh
+
+
+Deployment links:
+
+Backend:https://tec-management.onrender.com
+
+Frontend: https://frontend-techno.onrender.com
