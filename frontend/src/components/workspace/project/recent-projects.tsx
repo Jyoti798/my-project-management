@@ -106,7 +106,7 @@ const RecentProjects = () => {
                 className="grid gap-8 p-0"
               >
                 <div className="flex items-start gap-2">
-                  <div className="text-xl !leading-[1.4rem]">{project.emoji}</div>
+                  {/* <div className="text-xl !leading-[1.4rem]">{project.emoji}</div> */}
                   <div className="grid gap-1">
                     <p className="text-sm font-medium leading-none">{project.name}</p>
                     <p className="text-sm text-muted-foreground">

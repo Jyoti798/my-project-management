@@ -10,7 +10,6 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '../../ui/textarea';
@@ -30,7 +29,7 @@ export default function EditProjectForm(props: {
   const workspaceId = useWorkspaceId();
   const queryClient = useQueryClient();
 
-  const [emoji, setEmoji] = useState('📊');
+
   const projectId = project?._id as string;
 
   const formSchema = z.object({
@@ -54,15 +53,13 @@ export default function EditProjectForm(props: {
 
   useEffect(() => {
     if (project) {
-      setEmoji(project.emoji);
+     
       form.setValue('name', project.name);
       form.setValue('description', project.description);
     }
   }, [form, project]);
 
-  const handleEmojiSelection = (emoji: string) => {
-    setEmoji(emoji);
-  };
+ 
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
     if (isPending) return;
@@ -70,7 +67,7 @@ export default function EditProjectForm(props: {
       workspaceId,
       projectId,
       data: {
-        emoji,
+      
         ...values,
       },
     };
@@ -115,24 +112,7 @@ export default function EditProjectForm(props: {
         </div>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)}>
-            <div className="mb-4">
-              <label className="block text-sm font-medium text-gray-700">
-                Select Emoji
-              </label>
-              <Popover>
-                <PopoverTrigger asChild>
-                  <Button
-                    variant="outline"
-                    className="font-normal size-[60px] !p-2 !shadow-none mt-2 items-center rounded-full "
-                  >
-                    <span className="text-4xl">{emoji}</span>
-                  </Button>
-                </PopoverTrigger>
-                <PopoverContent align="start" className=" !p-0">
-                  <EmojiPickerComponent onSelectEmoji={handleEmojiSelection} />
-                </PopoverContent>
-              </Popover>
-            </div>
+          
             <div className="mb-4">
               <FormField
                 control={form.control}

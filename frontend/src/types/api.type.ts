@@ -151,7 +151,7 @@ export type RoleType = {
 export type ProjectType = {
   _id: string;
   name: string;
-  emoji: string;
+ 
   description: string;
   workspace: string;
   createdBy: {
@@ -166,7 +166,7 @@ export type ProjectType = {
 export type CreateProjectPayloadType = {
   workspaceId: string;
   data: {
-    emoji: string;
+  
     name: string;
     description: string;
   };
@@ -181,7 +181,7 @@ export type EditProjectPayloadType = {
   workspaceId: string;
   projectId: string;
   data: {
-    emoji: string;
+   
     name: string;
     description: string;
   };

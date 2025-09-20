@@ -74,8 +74,7 @@ export const getColumns = (projectId?: string): ColumnDef<TaskType>[] => {
               }
 
               return (
-                <div className="flex items-center gap-1">
-                  <span className="rounded-full border">{project.emoji}</span>
+              <div className="flex items-center">
                   <span className="block capitalize truncate w-[100px] text-ellipsis">
                     {project.name}
                   </span>

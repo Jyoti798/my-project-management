@@ -23,16 +23,16 @@ const appConfig = () => ({
   SESSION_EXPIRES_IN: getEnv('SESSION_EXPIRES_IN'),
 
   // Get the GOOGLE_CLIENT_ID environment variable
-  GOOGLE_CLIENT_ID: getEnv('GOOGLE_CLIENT_ID'),
+  // GOOGLE_CLIENT_ID: getEnv('GOOGLE_CLIENT_ID'),
   // Get the GOOGLE_CLIENT_SECRET environment variable
-  GOOGLE_CLIENT_SECRET: getEnv('GOOGLE_CLIENT_SECRET'),
+  // GOOGLE_CLIENT_SECRET: getEnv('GOOGLE_CLIENT_SECRET'),
   // Get the GOOGLE_CALLBACK_URL environment variable
-  GOOGLE_CALLBACK_URL: getEnv('GOOGLE_CALLBACK_URL'),
+  // GOOGLE_CALLBACK_URL: getEnv('GOOGLE_CALLBACK_URL'),
 
   // Get the FRONTEND_ORIGIN environment variable, default to 'localhost' if not set
   FRONTEND_ORIGIN: getEnv('FRONTEND_ORIGIN', 'localhost'),
   // Get the FRONTEND_GOOGLE_CALLBACK_URL environment variable
-  FRONTEND_GOOGLE_CALLBACK_URL: getEnv('FRONTEND_GOOGLE_CALLBACK_URL'),
+  // FRONTEND_GOOGLE_CALLBACK_URL: getEnv('FRONTEND_GOOGLE_CALLBACK_URL'),
 });
 
 // Export the configuration object by calling the appConfig function

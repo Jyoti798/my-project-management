@@ -13,7 +13,6 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '../../ui/textarea';
 import EmojiPickerComponent from '@/components/emoji-picker';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useWorkspaceId from '@/hooks/use-workspace-id';
@@ -27,7 +26,6 @@ export default function CreateProjectForm({ onClose }: { onClose: () => void }) 
   const queryClient = useQueryClient();
   const workspaceId = useWorkspaceId();
 
-  const [emoji, setEmoji] = useState('📊');
 
   const { mutate, isPending } = useMutation({
     mutationFn: createProjectMutationFn,
@@ -43,21 +41,18 @@ export default function CreateProjectForm({ onClose }: { onClose: () => void }) 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      name: '',
-      description: '',
+     name: '',
+description: '',
     },
   });
 
-  const handleEmojiSelection = (emoji: string) => {
-    setEmoji(emoji);
-  };
+
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
     if (isPending) return;
     const payload = {
       workspaceId,
       data: {
-        emoji,
         ...values,
       },
     };
@@ -101,24 +96,7 @@ export default function CreateProjectForm({ onClose }: { onClose: () => void }) 
         </div>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)}>
-            <div className="mb-4">
-              <label className="block text-sm font-medium text-gray-700">
-                Select Emoji
-              </label>
-              <Popover>
-                <PopoverTrigger asChild>
-                  <Button
-                    variant="outline"
-                    className="font-normal size-[60px] !p-2 !shadow-none mt-2 items-center rounded-full "
-                  >
-                    <span className="text-4xl">{emoji}</span>
-                  </Button>
-                </PopoverTrigger>
-                <PopoverContent align="start" className=" !p-0">
-                  <EmojiPickerComponent onSelectEmoji={handleEmojiSelection} />
-                </PopoverContent>
-              </Popover>
-            </div>
+    
             <div className="mb-4">
               <FormField
                 control={form.control}
