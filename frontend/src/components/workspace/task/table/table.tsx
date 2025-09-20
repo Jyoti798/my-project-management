@@ -1,6 +1,4 @@
 
-
-import * as React from 'react';
 import {
   ColumnDef,
   flexRender,

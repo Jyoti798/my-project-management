@@ -12,8 +12,6 @@ import {
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '../../ui/textarea';
-import EmojiPickerComponent from '@/components/emoji-picker';
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useWorkspaceId from '@/hooks/use-workspace-id';
 import { useMutation, useQueryClient } from '@tanstack/react-query';

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
@@ -13,7 +13,6 @@ import {
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '../../ui/textarea';
-import EmojiPickerComponent from '@/components/emoji-picker';
 import { ProjectType } from '@/types/api.type';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import useWorkspaceId from '@/hooks/use-workspace-id';
