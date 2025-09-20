@@ -3,8 +3,8 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/project-management/',
-  
+  base: '/frontend/',
+
   plugins: [react()],
   resolve: {
     alias: {
