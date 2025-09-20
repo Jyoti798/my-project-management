@@ -7,6 +7,8 @@ import { RolePermissions } from '../utils/role-permission';
 const seedRoles = async () => {
   console.log('Seeding role started...');
 
+
+  
   try {
     await connectDatabase();
     const session = await mongoose.startSession();
