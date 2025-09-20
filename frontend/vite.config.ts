@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   base: '/project-management/',
+  
   plugins: [react()],
   resolve: {
     alias: {
