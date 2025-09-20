@@ -9,6 +9,7 @@ import CreateProjectDialog from '@/components/workspace/project/create-project-d
 const AppLayout = () => {
   return (
     <AuthProvider>
+      
       <SidebarProvider>
         <Asidebar />
         <SidebarInset className="overflow-x-hidden">

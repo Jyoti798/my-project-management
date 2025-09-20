@@ -12,6 +12,8 @@ type AuthContextType = {
   user?: UserType;
   workspace?: WorkspaceType;
   error: any;
+
+
   isLoading: boolean;
   workspaceLoading: boolean;
   isFetching: boolean;

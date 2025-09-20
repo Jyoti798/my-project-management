@@ -13,6 +13,8 @@ const withPermission = (
     const navigate = useNavigate();
     const workspaceId = useWorkspaceId();
 
+
+    
     useEffect(() => {
       if (!user || !hasPermission(requiredPermission)) {
         navigate(`/workspace/${workspaceId}`);
