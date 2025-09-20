@@ -49,17 +49,6 @@ const BASE_PATH = config.BASE_PATH;
 app.use(express.json());
 // Middleware to parse URL-encoded data
 app.use(express.urlencoded({ extended: true }));
-// Middleware to configure session management
-// app.use( <--
-//   session({
-//     name: 'session', // Name of the session cookie
-//     keys: [config.SESSION_SECRET], // Secret key for encrypting the session
-//     maxAge: 24 * 60 * 60 * 1000, // Session expiration time (24 hours)
-//     secure: config.NODE_ENV === 'production', // Use secure cookies in production
-//     httpOnly: true, // Prevent client-side JavaScript from accessing the cookie
-//     sameSite: 'lax', // Restrict cross-site cookie usage
-//   })
-// );
 
 // Initialize Passport.js for authentication
 app.use(passport.initialize());
@@ -88,20 +77,6 @@ app.get(
     return res.status(HTTPSTATUS.OK).json({ message: 'Backend Running' });
   })
 );
-
-//passport session
-// Mount authentication routes at /auth
-// app.use(`${BASE_PATH}/auth`, authRoutes);
-// // Mount user-related routes at /user, protected by authentication middleware
-// app.use(`${BASE_PATH}/user`, isAuthenticated, userRoutes);
-// // Mount workspace-related routes at /workspace, protected by authentication middleware
-// app.use(`${BASE_PATH}/workspace`, isAuthenticated, workspaceRoutes);
-// // Mount member-related routes at /member, protected by authentication middleware
-// app.use(`${BASE_PATH}/member`, isAuthenticated, memberRoutes);
-// // Mount project-related routes at /project, protected by authentication middleware
-// app.use(`${BASE_PATH}/project`, isAuthenticated, projectRoutes);
-// // Mount task-related routes at /task, protected by authentication middleware
-// app.use(`${BASE_PATH}/task`, isAuthenticated, taskRoutes);
 
 //JWT session
 // Mount authentication routes at /auth

@@ -25,6 +25,7 @@ const httpConfig = () => ({
   // Redirection messages
   MOVED_PERMANENTLY: 301,
   FOUND: 302,
+  Not:99,
   NOT_MODIFIED: 304,
 });
 

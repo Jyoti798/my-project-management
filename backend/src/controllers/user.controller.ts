@@ -20,20 +20,3 @@ export const getCurrentUserController = asyncHandler(
     });
   }
 );
-
-/**
- * Async Handler:
-  Uses the asyncHandler middleware to automatically handle errors that may occur within the asynchronous function.
-
-  * Fetching User ID:
-  Uses optional chaining (?.) to safely access the user ID from the request object.
-  Service Call:
-  Calls getCurrentUserService() to fetch the current user's details using the extracted userId.
-
-  * Response:
-  Returns a JSON response with:
-  HTTP status code OK (200).
-  A message indicating successful user retrieval.
-  The fetched user details.
- */
-

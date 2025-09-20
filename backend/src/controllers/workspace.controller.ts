@@ -170,23 +170,3 @@ export const deleteWorkspaceByIdController = asyncHandler(
     });
   }
 );
-
-/**
- * Validation:
-Uses zod schemas to validate input data from request bodies and parameters.
-Asynchronous Handling:
-Uses asyncHandler to catch and handle asynchronous errors efficiently.
-
-* Service Usage:
-Makes use of various services to handle the actual logic for creating workspaces, retrieving workspaces, and fetching members.
-
-* Role and Permission Check:
-Uses getMemberRoleWorkspace to fetch the role of the current user.
-Uses roleGuard to enforce permission checks before proceeding.
-
-* Response Handling:
-Sends appropriate HTTP status codes (201 for creation and 200 for successful retrieval).
-Provides meaningful success messages.
- * 
- */
-
