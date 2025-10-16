@@ -1,7 +1,7 @@
 ⚡ Techno – Project Management SaaS
 
 Techno is a modern, scalable multi-tenancy project management platform crafted for growing teams and enterprises. With features like workspace management, task tracking, role-based access, and insightful analytics, Techno helps organizations boost collaboration, maintain productivity, and streamline project workflows across multiple clients and teams.
-
+Deployed link -https://frontend-techno.onrender.com/
 🚀 Demo
 
 Live Link: Techno – Project Management
